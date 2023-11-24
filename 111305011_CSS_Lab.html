@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first CSS stylesheet</title>
+    <link rel="stylesheet" type="text/css" href="111305011_CSS_Lab.css">
+    <style>
+        ul {
+         position: relative; /* Set position property */
+         top: 10px; /* Set top property in em unit */
+         left: 20px; /* Set left property in em unit */
+         width: 10em; /* Set width property in em unit */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Style for the navbar items */
+        .navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .center-text {
+             text-align: center;
+            }
+        @media all {
+            /* Styles for all media types */
+            body {
+                /* Additional styles for all media types */
+            }
+        }
+
+        @media print {
+            /* Styles for print media */
+            body {
+                /* Additional styles for print media */
+                color: #333; /* Text color */
+                background-color: pink; /* Background color */
+                font-family: Arial, sans-serif; /* Default font family for the body */
+                }
+            }
+        }
+    </style>
+    <style>
+        /* Style for the dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style for the dropdown button */
+        .dropdown-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Style for the dropdown items */
+        .dropdown-item {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        /* Change color on hover */
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+
+        /* Show dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="center-text">My first style page</h1>
+    <p class="center-text">This is my first time creating a webpage!</p>
+
+    <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <div class="dropdown">
+    <button class="dropdown-btn">My Favorite Artist</button>
+    <div class="dropdown-content">
+        <p><a href="#">BlackPink</a></p>
+        <p><a href="#">NewJeans</a></p>
+        <p><a href="#">Nicki Minaj</a></p>
+    </div>
+    </div>
+</div>
+    <h3><p>HTML is hard! Hope this HW has no mistake!</p></h3>
+    <h4><p>Contact me through 111305011@g.nccu.edu.tw</p></h4>
+    <h5><p>My favorite sport is tennis!</p></h5>
+    <h4><p>我最喜歡的食物</p></h4>
+    <ul>
+    <li>臭豆腐</li>
+    <li>波士頓派</li>
+    <li>義大利麵</li>
+    </ul>
+
+</body>
+</html>
